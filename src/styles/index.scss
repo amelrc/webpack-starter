@@ -11,12 +11,20 @@ body {
   font-size: 15px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background: url('../styles/images/img_bg_moodboard_simple.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $white;
+  width: 60%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 10px;
   &__icon {
     width: 100px;
   }
@@ -31,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 70%;
+  width: 50%;
   &__item {
     list-style-type: none;
     margin: 10px;
@@ -39,12 +47,15 @@ body {
 }
 .img {
   cursor: pointer;
+  width: 150px;
 }
 .hidden {
-  background-color: $orange;
+  background-color: $orange-transparent;
   height: 50px;
   display: flex;
   color: $white;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
@@ -53,6 +64,9 @@ body {
   border-radius: 15px;
   align-self: center;
   cursor: pointer;
+  font-size: 15px;
+  background-color: $orange;
+  color: $white;
 }
 
 .checkbox {
