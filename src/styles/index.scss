@@ -1,5 +1,60 @@
-$body-color: blue;
+@import './variables/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   color: $body-color;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__icon {
+    width: 100px;
+  }
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  &__item {
+    list-style-type: none;
+    margin: 10px;
+  }
+}
+.img {
+  cursor: pointer;
+}
+.hidden {
+  background-color: $orange;
+  height: 50px;
+  display: flex;
+  color: $white;
+}
+
+.button {
+  width: 200px;
+  height: 60px;
+  border-radius: 15px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none;
 }
